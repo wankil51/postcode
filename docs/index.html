@@ -62,7 +62,8 @@
         var postData = {
             postcode : data.postcode,
             zonecode : data.zonecode,
-            addr : fullRoadAddr
+            addr : fullRoadAddr,
+            guAddr : data
         };
         window.postMessageToiOS(postData);
       },
