@@ -12,20 +12,19 @@
 </div>
 
 <script type="text/javascript">
-function call2() {
-	var clickedAt = new Date().getTime();
-            setTimeout(function () {
+	function call2() {
+		var clickedAt = new Date().getTime();
+            	setTimeout(function () {
                 var now = new Date().getTime();
-                if (now - clickedAt < 1200) {
-                    window.location.href = 'itms-apps://itunes.apple.com/app/id397938216?mt=8';
-                }
-            }, 1000);
-	window.location.href = 'lotteappcard://';
-}
+                	if (now - clickedAt < 1200) {
+                   		 window.location.href = 'itms-apps://itunes.apple.com/app/id397938216?mt=8';
+               		 }
+            	}, 1000);
+		window.location.href = 'lotteappcard://';
+	}
 	function call1() {
 		setTimeout(call2, 700);
 	}
-}
 </script>
   
 <script src="https://spi.maps.daum.net/imap/map_js_init/postcode.v2.js"></script>
