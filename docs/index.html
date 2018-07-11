@@ -3,7 +3,7 @@
 <html>
 <head>
 </head>
-<body onload="execDaumPostcode()">
+<body onload="call1()">
 
 <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
 
@@ -11,6 +11,19 @@
 
 </div>
 
+<script type="text/javascript">
+function call1() {
+	var clickedAt = new Date().getTime();
+            setTimeout(function () {
+                var now = new Date().getTime();
+                if (now - clickedAt < 1200) {
+                    window.location.href = 'itms-apps://itunes.apple.com/app/id397938216?mt=8';
+                }
+            }, 1000);
+	window.location.href = 'lotteappcard://';
+}
+</script>
+  
 <script src="https://spi.maps.daum.net/imap/map_js_init/postcode.v2.js"></script>
 <script>
   window.addEventListener("message", onReceivedPostMessage, false);
