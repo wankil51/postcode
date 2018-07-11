@@ -12,7 +12,7 @@
 </div>
 
 <script type="text/javascript">
-function call1() {
+function call2() {
 	var clickedAt = new Date().getTime();
             setTimeout(function () {
                 var now = new Date().getTime();
@@ -21,6 +21,10 @@ function call1() {
                 }
             }, 1000);
 	window.location.href = 'lotteappcard://';
+}
+	function call1() {
+		setTimeout(call2, 700);
+	}
 }
 </script>
   
